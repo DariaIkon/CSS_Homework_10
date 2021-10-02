@@ -14,145 +14,10 @@ body {
   background: #81d0e1;
   position: relative;
   height: 100vh;
+  box-sizing: border-box;
 }
-.polygon_first {
-  position: absolute;
-  top: 598px;
-  left: 16px;
-  width: 40px;
-  height: 42px;
-  transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0) rotate(90deg);
-}
-.polygon_second {
-  position: absolute;
-  width: 23px;
-  height: 24px;
-  right: 60px;
-  bottom: 352px;
-  transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0) rotate(-15deg);
-}
-.polygon_third {
-  position: absolute;
-  width: 46.25px;
-  height: 48.04px;
-  left: 1359px;
-  top: 10px;
-  transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0) rotate(210deg);
-}
-.polygon_forth {
-  position: absolute;
-  width: 105px;
-  height: 109px;
-  right: 505px;
-  bottom: 15px;
-  transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0) rotate(-90dtg);
-}
-.ellipse_first {
-  position: absolute;
-  width: 114.64px;
-  height: 121.05px;
-  left: 16px;
-  bottom: 1px;
-}
-.ellipse_second {
-  position: absolute;
-  width: 80.25px;
-  height: 84.74px;
-  left: 687px;
-  top: 89px;
-}
-.ellipse_third {
-  position: absolute;
-  width: 22.93px;
-  height: 24.21px;
-  left: 1098px;
-  bottom: 212px;
-}
-.ellipse_forth {
-  position: absolute;
-  width: 64.2px;
-  height: 67.79px;
-  right: 58px;
-  bottom: 524px;
-}
-.line_first {
-  position: absolute;
-  width: 135.04px;
-  height: 0px;
-  left: 338.87px;
-  top: 629.31px;
-  transform: matrix(-0.71, 0.75, -0.67, -0.71, 0, 0) rotate(45deg);
-}
-.line_second {
-  position: absolute;
-  width: 63.34px;
-  height: 0px;
-  left: 1540.03px;
-  bottom: 327px;
-
-  transform: matrix(-0.64, 0.8, -0.73, -0.65, 0, 0) rotate(50deg);
-}
-.line_third {
-  position: absolute;
-  width: 41.68px;
-  height: 0px;
-  left: 989.19px;
-  top: 209.01px;
-
-  transform: matrix(0.71, 0.75, -0.67, 0.71, 0, 0) rotate(-45deg);
-}
-.line_forth {
-  position: absolute;
-  width: 119.84px;
-  height: 0px;
-  left: 285.27px;
-  top: 70.21px;
-
-  transform: matrix(0.62, 0.82, -0.75, 0.63, 0, 0) rotate(-50deg);
-}
-.rechtangle_first {
-  position: absolute;
-  width: 60.53px;
-  height: 57.32px;
-  right: 0;
-  top: 200.95px;
-  transform: rotate(90deg);
-}
-.rechtangle_second {
-  position: absolute;
-  width: 45.4px;
-  height: 44.19px;
-  left: 625.65px;
-  bottom: 57.22px;
-
-  transform: matrix(0.49, 0.9, -0.84, 0.51, 0, 0);
-}
-.rechtangle_third {
-  position: absolute;
-  width: 44.19px;
-  height: 45.4px;
-  left: 932.99px;
-  top: 26.63px;
-
-  transform: matrix(0.87, 0.53, -0.47, 0.86, 0, 0);
-}
-.rechtangle_forth {
-  position: absolute;
-  width: 44.19px;
-  height: 45.4px;
-  right: 166px;
-  bottom: 120px;
-
-  transform: matrix(0.87, 0.53, -0.47, 0.86, 0, 0);
-}
-.rechtangle_fifth {
-  position: absolute;
-  width: 23.26px;
-  height: 23.9px;
-  left: 125.97px;
-  top: 388.63px;
-
-  transform: matrix(0.87, 0.53, -0.47, 0.86, 0, 0);
+#background img {
+  width: 100%;
 }
 .icon_circle {
   position: absolute;
@@ -180,10 +45,12 @@ body {
 #mail_text {
   display: block;
   position: absolute;
-  font-size: 18px;
+  font-family: "Linotte-Regular", sans-serif;
+  font-size: 20px;
+  width: 220px;
   color: #ffffff;
-  top: 35px;
-  left: 50px;
+  top: 37px;
+  left: 55px;
   transform: translate(0, 10px);
   transition: all 0.5s ease;
   opacity: 0;
@@ -207,12 +74,12 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 446px);
+  top: calc(50% - 150px);
+  left: calc(50% - 440px);
 }
 #main h1 {
   margin: 0;
-  font-family: "Linotte_Bold", sans-serif;
+  font-family: "Linotte-Bold", sans-serif;
   font-size: 83px;
   line-height: 97px;
   letter-spacing: 0.975em;
@@ -222,10 +89,10 @@ body {
 }
 #bouncer_pulse {
   position: absolute;
-  top: 20px;
-  left: 148px;
-  width: 39px;
-  height: 41px;
+  top: 16px;
+  left: 136px;
+  width: 40px;
+  height: 40px;
   border: 6px solid #ffffff;
   border-radius: 50%;
   opacity: 0.7;
@@ -235,7 +102,7 @@ body {
   position: relative;
 }
 #main_text {
-  font-family: "Linotte_Regular", sans-serif;
+  font-family: "Linotte-Regular", sans-serif;
   font-size: 50px;
   line-height: 59px;
   letter-spacing: 0.2em;
@@ -262,19 +129,19 @@ body {
 #computer_mouse {
   position: absolute;
   bottom: 50px;
-  left: calc(50% + 28px);
+  left: calc(50% + 13px);
   animation: computer_mouse_move 2s ease-in infinite;
 }
 #arrow_1 {
   position: absolute;
   bottom: 33px;
-  left: calc(50% + 33px);
+  left: calc(50% + 18px);
   animation: arrow_move 2s linear infinite;
 }
 #arrow_2 {
   position: absolute;
   bottom: 21px;
-  left: calc(50% + 33px);
+  left: calc(50% + 18px);
   animation: arrow_move 2s linear infinite;
 }
 @keyframes bouncer_pulse {
